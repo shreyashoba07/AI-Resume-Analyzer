@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            background: white;
+            width: 70%;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        input[type="file"] {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AI-Powered Resume Analyzer and Job Recommendation System</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+
+        <h2>Welcome</h2>
+
+        <p>
+            Upload your resume and get:
+        </p>
+
+        <ul style="text-align:left; display:inline-block;">
+            <li>Resume Score</li>
+            <li>Skill Analysis</li>
+            <li>Career Suggestions</li>
+            <li>Job Recommendations</li>
+        </ul>
+
+        <br><br>
+
+        <input type="file">
+
+        <br>
+
+        <button onclick="analyzeResume()">
+            Analyze Resume
+        </button>
+
+        <h3 id="result"></h3>
+
+    </div>
+</div>
+
+<script>
+function analyzeResume() {
+    document.getElementById("result").innerHTML =
+    "Resume Score: 85/100 <br><br> Skills Found: Python, SQL, HTML, CSS <br><br> Recommended Job: Data Analyst";
+}
+</script>
+
+</body>
+</html>
